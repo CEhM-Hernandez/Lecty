@@ -1,0 +1,19 @@
+main {
+    margin: 5rem auto;
+}
+
+.payment-section {
+    width: fit-content;
+    padding: 1rem;
+}
+
+.pay-form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.disabled-form {
+    border: 1px solid;
+    border-color: var(--bs-form-valid-border-color);
+    border-radius: var(--bs-border-radius);
+}
