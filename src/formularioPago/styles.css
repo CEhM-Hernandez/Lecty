@@ -2,13 +2,12 @@ main {
     margin: 5rem auto;
 }
 
-.payment-section {
-    width: fit-content;
-    padding: 1rem;
+.card-body {
+    padding: 1rem 0;
 }
 
 .pay-form {
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
 }
 
