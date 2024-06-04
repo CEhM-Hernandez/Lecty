@@ -13,32 +13,60 @@ p {
     margin: 0;
 }
 
+/* -------------------- eliminación de selectores en input (tipo number)-------------------- */
+
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
+/* -------------------- botones -------------------- */
+
 .btn-primary {
+    color: #FFFFFF;
     background-color: #320D47;
-    border: none;
+    border-color: #FFFFFF;
 }
 
-.btn-primary:hover {
-    background-color: #f2b705;
-    border: none;
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    color: #FFFFFF;
+    background-color: #F2B705;
+    border-color: #FFFFFF;
 }
 
-.btn-secondary {
-    background-color: #f2b705;
-    border: 1px solid #f2b705;
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    background-color: #320D47;
+    border-color: #FFFFFF;
+}
+
+.btn-primary .badge {
     color: #320D47;
-}
-
-.btn-secondary:hover {
-    background-color: transparent;
-    color: #f2b705;
-    border: 1px solid #f2b705;
+    background-color: #FFFFFF;
 }
 
 /* -------------------- fuentes -------------------- */
