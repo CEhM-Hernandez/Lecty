@@ -23,50 +23,50 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* -------------------- botones -------------------- */
 
-.btn-primary {
+.btn-principal {
     color: #FFFFFF;
     background-color: #320D47;
     border-color: #FFFFFF;
 }
 
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
+.btn-principal:hover,
+.btn-principal:focus,
+.btn-principal:active,
+.btn-principal.active,
+.open .dropdown-toggle.btn-principal {
     color: #FFFFFF;
     background-color: #F2B705;
     border-color: #FFFFFF;
 }
 
-.btn-primary:active,
-.btn-primary.active,
-.open .dropdown-toggle.btn-primary {
+.btn-principal:active,
+.btn-principal.active,
+.open .dropdown-toggle.btn-principal {
     background-image: none;
 }
 
-.btn-primary.disabled,
-.btn-primary[disabled],
-fieldset[disabled] .btn-primary,
-.btn-primary.disabled:hover,
-.btn-primary[disabled]:hover,
-fieldset[disabled] .btn-primary:hover,
-.btn-primary.disabled:focus,
-.btn-primary[disabled]:focus,
-fieldset[disabled] .btn-primary:focus,
-.btn-primary.disabled:active,
-.btn-primary[disabled]:active,
-fieldset[disabled] .btn-primary:active,
-.btn-primary.disabled.active,
-.btn-primary[disabled].active,
-fieldset[disabled] .btn-primary.active {
+.btn-principal.disabled,
+.btn-principal[disabled],
+fieldset[disabled] .btn-principal,
+.btn-principal.disabled:hover,
+.btn-principal[disabled]:hover,
+fieldset[disabled] .btn-principal:hover,
+.btn-principal.disabled:focus,
+.btn-principal[disabled]:focus,
+fieldset[disabled] .btn-principal:focus,
+.btn-principal.disabled:active,
+.btn-principal[disabled]:active,
+fieldset[disabled] .btn-principal:active,
+.btn-principal.disabled.active,
+.btn-principal[disabled].active,
+fieldset[disabled] .btn-principal.active {
     background-color: #320D47;
     border-color: #FFFFFF;
 }
 
-.btn-primary .badge {
+.btn-principal .badge {
     color: #320D47;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
 /* -------------------- fuentes -------------------- */
