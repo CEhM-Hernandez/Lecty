@@ -50,7 +50,7 @@
 					</ul>
 					<form class="d-flex">
 						<input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-						<button class="btn btn-secondary" type="submit">
+						<button class="btn btn-outline-warning" type="submit">
 							<i class="fa-solid fa-magnifying-glass"></i>
 						</button>
 					</form>
@@ -81,8 +81,8 @@
 				</div>
 			</nav>
 		</div>
-		<div class="card-body d-flex gap-3 flex-column flex-md-row tab-content">
-			<div class="card container tab-pane active show fade" id="tab-free">
+		<section class="card-body d-flex gap-3 flex-column flex-lg-row justify-content-around tab-content">
+			<section class="card container col-12 col-lg-6 tab-pane active show fade " id="tab-free">
 				<h4>PLAN FREE</h4>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum minus ex quia cum laborum fugit
@@ -91,8 +91,8 @@
 					voluptas est? Suscipit, asperiores tempora unde deserunt qui exercitationem tempore magnam
 					quisquam incidunt. Voluptates cumque, iure optio maxime eius similique nobis quae.
 				</p>
-			</div>
-			<div class="card container tab-pane fade" id="tab-basico">
+			</section>
+			<section class="card container col-12 col-lg-6 tab-pane fade" id="tab-basico">
 				<h4>PLAN BÁSICO</h4>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum minus ex quia cum laborum fugit
@@ -101,8 +101,8 @@
 					voluptas est? Suscipit, asperiores tempora unde deserunt qui exercitationem tempore magnam
 					quisquam incidunt. Voluptates cumque, iure optio maxime eius similique nobis quae.
 				</p>
-			</div>
-			<div class="card container tab-pane fade" id="tab-pro">
+			</section>
+			<section class="card container col-12 col-lg-6 tab-pane fade" id="tab-pro">
 				<h4>PLAN PRO</h4>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum minus ex quia cum laborum fugit
@@ -111,49 +111,53 @@
 					voluptas est? Suscipit, asperiores tempora unde deserunt qui exercitationem tempore magnam
 					quisquam incidunt. Voluptates cumque, iure optio maxime eius similique nobis quae.
 				</p>
-			</div>
-			<form class="pay-form needs-validation was-validated" novalidate="">
-				<div class="form-floating">
-					<input type="number" class="form-control" id="numeroTarjeta" placeholder="Tarjeta Credito/Débito"
-						pattern="\d{16}" min="1" maxlength="16s" required>
-					<label for="numeroTarjeta">Tarjeta Credito/Débito</label>
+			</section>
+			<section class="pay-container card p-3 col-sm-12 col-lg-5">
+				<div class="dinamic-card-container" id="dinamicCard">
+					<img src="../../public/assets/images/tarjeta-dinamica/tarjeta-dinamica-lecty.png"
+						class="dinamic-card my-3 col-12"></img>
+					<!-- <i class="fa-brands fa-cc-visa logo-banco"></i> -->
+					<!-- <p id="numeroTarjetaDinamica">0000 0000 0000 0000</p>
+					<p id="nombreTarjetaDinamica">EDUARDO HERNANDEZ MUNEVAR</p>
+					<P id="cvvTarjetaDinamica">123</P> -->
 				</div>
-				<div class="d-flex gap-3 justify-content-between my-3">
+				<form class="pay-form needs-validation">
 					<div class="form-floating">
-						<input type="number" class="form-control" id="numeroCuotas" placeholder="Cuotas" required>
-						<label for="numeroCuotas">Cuotas</label>
+						<input type="text" class="form-control" id="numeroTarjeta" placeholder="Tarjeta Credito/Débito"
+							minlength="16" maxlength="19" required>
+						<label for="numeroTarjeta">Tarjeta Credito/Débito</label>
 					</div>
-					<div class="form-floating disabled-form">
-						<input type="text" class="form-control" id="valorCuotas" placeholder="Cuota" value="$0"
-							readonly>
-						<label for="valorCuotas">Valor</label>
+					<div class="d-flex gap-3 justify-content-between my-3">
+						<div class="form-floating col-6">
+							<input type="number" class="form-control" id="numeroCuotas" placeholder="Cuotas" required>
+							<label for="numeroCuotas">Cuotas</label>
+						</div>
+						<div class="form-floating disabled-form col-5">
+							<input type="text" class="form-control" id="precioTotal" placeholder="Total" value="$0"
+								readonly>
+							<label for="precioTotal">Total</label>
+						</div>
 					</div>
-					<div class="form-floating disabled-form">
-						<input type="text" class="form-control" id="precioTotal" placeholder="Total" value="$0"
-							readonly>
-						<label for="precioTotal">Total</label>
+					<div class="form-floating mb-3">
+						<input type="text" class="form-control" id="nombre" placeholder="Nombre" pattern="[A-Za-z\s]+"
+							required>
+						<label for="nombre">Nombre en la Tarjeta</label>
 					</div>
-				</div>
-				<div class="form-floating mb-3">
-					<input type="text" class="form-control" id="nombre" placeholder="Nombre" pattern="[A-Za-z\s]+"
-						required>
-					<label for="nombre">Nombre en la Tarjeta</label>
-				</div>
-				<div class="d-flex gap-3 justify-content-between flex-column flex-sm-row">
-					<div class="form-floating">
-						<input type="number" class="form-control" id="expiracionTarjeta" placeholder="MM/YY" required>
-						<label for="expiracionTarjeta">Expiración MM/YY</label>
+					<div class="d-flex gap-3 gap-sm-0 justify-content-between flex-column flex-sm-row">
+						<div class="form-floating col-12 col-sm-6">
+							<input type="number" class="form-control" id="expiracionTarjeta" placeholder="MM/YY"
+								required>
+							<label for="expiracionTarjeta">Expiración MM/YY</label>
+						</div>
+						<div class="form-floating col-12 col-sm-5">
+							<input type="number" class="form-control" id="cvv" placeholder="CVV" required>
+							<label for="cvv">CVV</label>
+						</div>
 					</div>
-					<div class="form-floating">
-						<input type="number" class="form-control" id="cvv" placeholder="CVV" required>
-						<label for="cvv">CVV</label>
-					</div>
-				</div>
-				<button type="submit" class="btn btn-primary col-12 mt-3">Pagar</button>
-			</form>
-		</div>
-
-
+					<button type="submit" class="btn btn-principal col-12 mt-3">Pagar</button>
+				</form>
+			</section>
+		</section>
 	</main>
 
 	<footer class="footer text-center">

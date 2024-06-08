@@ -6,14 +6,28 @@ main {
     padding: 1rem 0;
 }
 
-.pay-form {
-    max-width: 400px;
-    min-width: 320px;
-    margin: 0 auto;
+.tab-pane {
+    margin: 0;
 }
 
 .disabled-form {
     border: 1px solid;
     border-color: var(--bs-form-valid-border-color);
     border-radius: var(--bs-border-radius);
+}
+
+.nav-link {
+    color: #F2B705;
+}
+
+.nav-link:hover {
+    color: #320D47;
+}
+
+.dinamic-card-container {
+    position: relative;
+}
+
+.logo-banco {
+    font-size: 300px;
 }
