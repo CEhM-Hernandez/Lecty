@@ -25,9 +25,60 @@ main {
 }
 
 .dinamic-card-container {
+    width: fit-content;
+    margin: 1rem auto;
     position: relative;
+    pointer-events: none;
+    cursor: default;
 }
 
-.logo-banco {
-    font-size: 300px;
+.dinamic-card {
+    width: 350px;
+}
+
+.logo-container {
+    background-color: #fff;
+    color: #000;
+    height: 2.1rem;
+    width: 2.8rem;
+    border-radius: 4px;
+    font-size: 2.5rem;
+    line-height: 2rem;
+    position: absolute;
+    bottom: 25%;
+    right: 23%;
+}
+
+.logo-container i {
+    line-height: 0;
+}
+
+.dinamic-card-container p {
+    color: #fff;
+    font-size: 1.2rem;
+    position: absolute;
+}
+
+#numeroTarjetaDinamica {
+    bottom: 45%;
+    left: 8%;
+    font-size: x-large;
+}
+
+#fecha {
+    bottom: 39%;
+    left: 35%;
+    font-size: small
+}
+
+#nombreTarjetaDinamica {
+    bottom: 28%;
+    left: 8%;
+    font-size: small;
+}
+
+#cvvTarjetaDinamica {
+    color: black;
+    bottom: 41%;
+    right: 8%;
 }
