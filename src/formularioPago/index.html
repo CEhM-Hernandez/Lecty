@@ -63,19 +63,20 @@
 		<div class="card-header">
 			<nav class="nav nav-tabs card-header-tabs">
 				<div class="nav-item">
-					<button type="button" class="nav-link roboto-bold active" data-bs-toggle="tab"
+					<button type="button" class="nav-link roboto-bold active" id="free" data-bs-toggle="tab"
 						data-bs-target="#tab-free">
 						FREE
 					</button>
 				</div>
 				<div class="nav-item">
-					<button type="button" class="nav-link roboto-bold" data-bs-toggle="tab"
+					<button type="button" class="nav-link roboto-bold" id="basico" data-bs-toggle="tab"
 						data-bs-target="#tab-basico">
 						BÁSICO
 					</button>
 				</div>
 				<div class="nav-item">
-					<button type="button" class="nav-link roboto-bold" data-bs-toggle="tab" data-bs-target="#tab-pro">
+					<button type="button" class="nav-link roboto-bold" id="pro" data-bs-toggle="tab"
+						data-bs-target="#tab-pro">
 						PRO
 					</button>
 				</div>
@@ -260,19 +261,22 @@
 						<i class="fa-brands" id="logoBanco"></i>
 					</span>
 
-					<p class="texto-tarjeta roboto-medium-italic" id="numeroTarjetaDinamica">0000 0000 0000 0000</p>
+					<span class="texto-tarjeta roboto-medium-italic" id="numeroTarjetaDinamica">
+						0000 0000 0000 0000
+					</span>
 					<span class="detalles-tarjetadinamica">
-						<p class="texto-tarjeta roboto-medium-italic" id="nombreTarjetaDinamica">NOMBRE EN LA TARJETA
-						</p>
-						<p class="texto-tarjeta" id="fecha">
+						<span class="texto-tarjeta roboto-medium-italic" id="nombreTarjetaDinamica">
+							NOMBRE EN LA TARJETA
+						</span>
+						<span class="texto-tarjeta" id="fecha">
 							<span id="mes">00</span>
 							/
 							<span id="ano">00</span>
-						</p>
+						</span>
 					</span>
 					<p class="texto-tarjeta roboto-medium-italic" id="cvvTarjetaDinamica">123</p>
 				</div>
-				<form class="pay-form needs-validation">
+				<form class="pay-form needs-validation" id="formulario">
 					<div class="form-floating">
 						<input type="text" class="form-control" id="numeroTarjeta" placeholder="Tarjeta Credito/Débito"
 							minlength="16" maxlength="19" required>
@@ -280,8 +284,9 @@
 					</div>
 					<div class="d-flex gap-3 justify-content-between my-3">
 						<div class="form-floating col-6">
-							<input type="number" class="form-control" id="numeroCuotas" placeholder="Cuotas" required>
-							<label for="numeroCuotas">Cuotas</label>
+							<input type="text" class="form-control" id="cuotas" placeholder="Cuotas" max="12"
+								maxlength="2" value="1" required>
+							<label for="cuotas">Cantidad Meses</label>
 						</div>
 						<div class="form-floating disabled-form col-5">
 							<input type="text" class="form-control" id="precioTotal" placeholder="Total" value="$0"
@@ -290,18 +295,25 @@
 						</div>
 					</div>
 					<div class="form-floating mb-3">
-						<input type="text" class="form-control" id="nombre" placeholder="Nombre" maxlength="25"
+						<input type="text" class="form-control" id="nombre" placeholder="Nombre" maxlength="20"
 							required>
 						<label for="nombre">Nombre en la Tarjeta</label>
 					</div>
-					<div class="d-flex gap-3 gap-sm-0 justify-content-between flex-column flex-sm-row">
-						<div class="form-floating col-12 col-sm-6">
-							<input type="number" class="form-control" id="expiracionTarjeta" placeholder="MM/YY"
-								required>
-							<label for="expiracionTarjeta">Expiración MM/YY</label>
+					<div class="d-flex gap-3 justify-content-between flex-column flex-sm-row">
+						<div class="d-flex gap-3 justify-content-between flex-row col-12 col-sm-8">
+							<div class="form-floating">
+								<input type="text" class="form-control" id="expiracionMM" placeholder="MM" max="12"
+									maxlength="2" required>
+								<label for="expiracionMM">Mes</label>
+							</div>
+							<div class="form-floating">
+								<input type="text" class="form-control" id="expiracionYY" placeholder="YY" max="30"
+									maxlength="2" required>
+								<label for="expiracionYY">Año</label>
+							</div>
 						</div>
-						<div class="form-floating col-12 col-sm-5">
-							<input type="number" class="form-control" id="cvv" placeholder="CVV" maxlength="3" required>
+						<div class="form-floating mb-3">
+							<input type="text" class="form-control" id="cvv" placeholder="CVV" maxlength="3" required>
 							<label for="cvv">CVV</label>
 						</div>
 					</div>
