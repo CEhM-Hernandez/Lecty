@@ -14,25 +14,15 @@ main section {
     padding: 50px 0;
 }
 
-.fondo-libros {
-    background-image: url("../../public/assets/images/fondos/FondoLibros.png");
-    color: #fff;
-}
-
-
-.Características li {
-    list-style: none;
-}
-
 /*----------------------banner-----------------------*/
 
 #banner {
     border-radius: 5px;
     display: flex;
-    background-image: url("../../public/assets/images/fondos/banner.png");
+    background-image: url("../../public/assets/images/fondos/Banner.png");
     text-align: end;
     font-size: x-large;
-    color: #fff
+    color: #fff;
 }
 
 #titulo {
