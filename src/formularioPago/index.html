@@ -269,9 +269,9 @@
 							NOMBRE EN LA TARJETA
 						</span>
 						<span class="texto-tarjeta" id="fecha">
-							<span id="mes">00</span>
+							<span id="mes">MM</span>
 							/
-							<span id="ano">00</span>
+							<span id="ano">YY</span>
 						</span>
 					</span>
 					<p class="texto-tarjeta roboto-medium-italic" id="cvvTarjetaDinamica">123</p>
@@ -284,9 +284,9 @@
 					</div>
 					<div class="d-flex gap-3 justify-content-between my-3">
 						<div class="form-floating col-6">
-							<input type="text" class="form-control" id="cuotas" placeholder="Cuotas" max="12"
-								maxlength="2" value="1" required>
-							<label for="cuotas">Cantidad Meses</label>
+							<input type="text" class="form-control" id="cantidadMeses" placeholder="Cantidad Meses"
+								min="1" maxlength="2" value="1" required>
+							<label for="cantidadMeses">Cantidad Meses</label>
 						</div>
 						<div class="form-floating disabled-form col-5">
 							<input type="text" class="form-control" id="precioTotal" placeholder="Total" value="$0"
@@ -302,14 +302,14 @@
 					<div class="d-flex gap-3 justify-content-between flex-column flex-sm-row">
 						<div class="d-flex gap-3 justify-content-between flex-row col-12 col-sm-8">
 							<div class="form-floating">
-								<input type="text" class="form-control" id="expiracionMM" placeholder="MM" max="12"
-									maxlength="2" required>
-								<label for="expiracionMM">Mes</label>
+								<input type="text" class="form-control" id="expiracionMM" placeholder="MM" min="1"
+									max="12" maxlength="2" required>
+								<label for="expiracionMM">Expiracion/MM</label>
 							</div>
 							<div class="form-floating">
-								<input type="text" class="form-control" id="expiracionYY" placeholder="YY" max="30"
-									maxlength="2" required>
-								<label for="expiracionYY">Año</label>
+								<input type="text" class="form-control" id="expiracionYY" placeholder="YY" min="1"
+									max="30" maxlength="2" required>
+								<label for="expiracionYY">Expiracion/YY</label>
 							</div>
 						</div>
 						<div class="form-floating mb-3">
