@@ -3,7 +3,6 @@ $(() => {
 
         let input = $(this);
         let logoBanco = $('#logoBanco');
-        let numeroTarjeta = $('#numeroTarjetaDinamica');
 
         let value = input.val().replace(/\s+/g, '');
 
@@ -33,14 +32,9 @@ $(() => {
         }
 
         function actualizarNumeroTarjeta(addClass, nuevoNumero) {
-            logoBanco.removeClass('fa-cc-visa fa-cc-amex fa-cc-diners-club fa-cc-mastercard');
-            logoBanco.addClass(addClass);
-            numeroTarjeta.text(nuevoNumero);
-            if (input.val().length === 19 && addClass != '') {
-                input.removeClass('is-invalid').addClass('is-valid');
-            } else {
-                input.removeClass('is-valid').addClass('is-invalid');
-            }
+            logoBanco.removeClass('fa-cc-visa fa-cc-amex fa-cc-diners-club fa-cc-mastercard').addClass(addClass);
+            let esValido = input.val().length === 19 && addClass != '';
+            actualizarEstado($('#numeroTarjeta'), esValido, $('#numeroTarjetaDinamica'), nuevoNumero);
         }
     });
 
@@ -86,56 +80,54 @@ $(() => {
         }
     });
 
+
+
+    function validarFechaYEntrada() {
+        let MM = $('#expiracionMM').val();
+        let YY = $('#expiracionYY').val();
+
+        let esMesValido = MM.length === 2 && MM >= 1 && MM <= 12;
+        let esAnoValido = YY.length === 2 && YY >= 24 && YY <= 99;
+
+        if (esMesValido && esAnoValido) {
+            let fechaActual = new Date();
+            let mesActual = fechaActual.getMonth() + 1;
+            let añoActual = fechaActual.getFullYear();
+
+            let fechaIngresada = new Date(`20${YY}`, MM);
+
+            let esFechaValida = fechaIngresada.getFullYear() > añoActual ||
+                (fechaIngresada.getFullYear() === añoActual && fechaIngresada.getMonth() > mesActual);
+
+            actualizarEstado($('#expiracionMM'), esFechaValida, $('#mes'), MM);
+            actualizarEstado($('#expiracionYY'), esFechaValida, $('#ano'), YY);
+        } else {
+            actualizarEstado($('#expiracionMM'), esMesValido, $('#mes'), 'MM');
+            actualizarEstado($('#expiracionYY'), esAnoValido, $('#ano'), 'YY');
+        }
+    }
+
     $('#expiracionMM').on('input', function () {
         let input = $(this);
-        let value = $(this).val();
-        let mes = $('#mes');
-
-        let validValue = value.replace(/[^\d{12}]/g, '');
-
-        if (value !== validValue) {
-            input.val(validValue);
-        }
-
-        mes.text(validValue);
-
-        if (validValue.length <= 0 || validValue > 12) {
-            mes.text('00');
-            input.removeClass('is-valid').addClass('is-invalid');
-        } else {
-            input.removeClass('is-invalid').addClass('is-valid');
-        }
+        let value = input.val().replace(/[^\d]/g, '');
+        input.val(value);
+        validarFechaYEntrada();
     });
 
     $('#expiracionYY').on('input', function () {
         let input = $(this);
-        let value = $(this).val();
-        let ano = $('#ano');
-
-        let validValue = value.replace(/[^\d]/g, '');
-
-        if (value !== validValue) {
-            input.val(validValue);
-        }
-
-        ano.text(validValue);
-
-
-        if (validValue.length <= 0 || validValue > 28 || validValue < 25) {
-            ano.text('00');
-            input.removeClass('is-valid').addClass('is-invalid');
-        } else {
-            input.removeClass('is-invalid').addClass('is-valid');
-        }
+        let value = input.val().replace(/[^\d]/g, '');
+        input.val(value);
+        validarFechaYEntrada();
     });
 
-    $('#cuotas').on('input', function () {
-        let input = $('#cuotas');
-        let value = input.val();
+    $('#cantidadMeses').on('input', function () {
+        let input = $('#cantidadMeses');
+        let value = $('#cantidadMeses').val();
 
         setPrecio();
 
-        if (value.length <= 0 || value > 12) {
+        if (value.length <= 0) {
             input.removeClass('is-valid').addClass('is-invalid');
         } else {
             input.removeClass('is-invalid').addClass('is-valid');
@@ -144,7 +136,6 @@ $(() => {
 
     $('#free').on('click', function () {
         setPrecio();
-        console.log("peeeenee")
     });
 
     $('#basico').on('click', function () {
@@ -156,8 +147,7 @@ $(() => {
     });
 
     function setPrecio() {
-        let input = $('#cuotas');
-        let value = $('#cuotas').val();
+        let value = $('#cantidadMeses').val();
         let total = $('#precioTotal');
 
         total.val('$' + new Intl.NumberFormat().format(precio()));
@@ -171,5 +161,14 @@ $(() => {
                 return 45000 * parseInt(value);
             }
         }
+    }
+
+    function actualizarEstado(input, esValido, elementoDinamico, valor) {
+        if (esValido) {
+            input.removeClass('is-invalid').addClass('is-valid');
+        } else {
+            input.removeClass('is-valid').addClass('is-invalid');
+        }
+        elementoDinamico.text(valor);
     }
 });
