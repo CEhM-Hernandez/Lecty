@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.register {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 70px;
+}
+
+.image-container {
+    flex: 1;
+    background-color: #320d47;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contenedor-Datos{
+    display: flex;
+    padding: 8px;
+    padding-bottom: 2px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(175, 171, 171);
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contenedor-Datos #password{
+    width: 100%;
+    padding-bottom: 5px;
+    border: 0;
+    outline: none;
+}
+
+.contenedor-Datos #usuario{
+    width: 100%;
+    padding-bottom: 5px;
+    border: 0;
+    outline: none;
+}
+
+.contenedor-Datos #email{
+    width: 100%;
+    padding-bottom: 5px;
+    border: 0;
+    outline: none;
+}
+
+.contenedor-Datos #confirpassword{
+    width: 100%;
+    padding-bottom: 5px;
+    border: 0;
+    outline: none;
+}
+
+.button-in{
+    padding: 10px;
+}
+
+.contenedor-formulario{
+    width: 100%;
+    display: block;
+    position: relative;
+    box-shadow: 2px 2px 4px rgb(219, 216, 216);
+    padding: 40px;
+}
+
+.image-container .texto-logo{
+    width: 60%;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    margin-top: 20px;
+    color: #FFEB3B;
+}
+
+h1 img {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.label {
+    display: block;
+    margin-top: 10px;
+}
+
+.input-container {
+    position: relative;
+    margin-top: 5px;
+}
+
+.input-container #email {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-color: #000 ;
+}
+
+.input-container #password {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-color: #000 ;
+}
+
+.input-container #usuario {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-color: #000 ;
+}
+
+.input-container #confirpassword {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-color: #000 ;
+}
+
+.input-container .icon-container {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-container .icon-container i.material-icons {
+    margin-right: 10px;
+}
+
+.input-container input {
+    width: 80%;
+    padding: 8px 40px;
+    margin-top: 19px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #320d47;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #320d47;
+}
+
+p {
+    margin-top: 10px;
+}
+
+a {
+    color: #f2b705;
+    text-decoration: line;
+}
+
+a:hover {
+    text-decoration: underline;
+}   
