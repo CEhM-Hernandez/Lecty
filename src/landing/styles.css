@@ -19,8 +19,68 @@ main section {
     color: #fff;
 }
 
+
 .Características li {
     list-style: none;
+}
+
+/*----------------------banner-----------------------*/
+
+#banner {
+    border-radius: 5px;
+    display: flex;
+    background-image: url("../../public/assets/images/fondos/banner.png");
+    text-align: end;
+    font-size: x-large;
+    color: #fff
+}
+
+#titulo {
+    text-align: center;
+    margin-left: 750px;
+}
+
+#lema {
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 550px;
+}
+
+#btn {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 450px;
+}
+
+/*---------------caracteristicas--------------------*/
+
+.feature-container {
+    display: block;
+    text-align: center;
+    padding: 2rem 0px;
+}
+
+.icono {
+    margin-top: 30px;
+    font-size: 40px;
+    color: #ffc107;
+}
+
+.card-header {
+    color: #ffc107;
+}
+
+
+
+.feature-container .card {
+    background: #320D47;
+    height: 320px;
+}
+
+.feature-container .card .card-body {
+    text-align: center;
+    color: #fff;
+    flex: none;
 }
 
 /* -------------------- planes -------------------- */
@@ -47,4 +107,14 @@ main section {
 .pricing-container .card .card-body {
     text-align: center;
     flex: none;
+}
+
+/*----------carrusel---------------*/
+
+.carousel-container {
+    display: flex;
+    text-align: center;
+    height: 300px;
+    background-color: #f5f5f5;
+    font-size: x-large;
 }
