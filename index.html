@@ -62,9 +62,11 @@
         <section class="container card feature-container">
 
             <div class="card feature-card">
-                <i class="icono fa-solid fa-magnifying-glass"></i>
-                <div class="card-header">Acceso a libros de calidad</div>
+                <div class="card-header d-flex flex-column">
+                    <i class="fa-solid fa-magnifying-glass my-3"></i>
+                </div>
                 <div class="card-body">
+                    <h3 class="roboto-medium mb-3">Acceso a libros de calidad</h3>
                     <p>
                         Como exploradores urbanos, los usuarios pueden personalizar
                         su recorrido según sus preferencias,encontrando rincones
@@ -74,9 +76,11 @@
             </div>
 
             <div class="card feature-card">
-                <i class="icono fa-solid fa-lock-open"></i>
-                <div class="card-header">Acceso sin limitaciones</div>
+                <div class="card-header d-flex flex-column">
+                    <i class="fa-solid fa-lock-open my-3"></i>
+                </div>
                 <div class="card-body">
+                    <h3 class="roboto-medium mb-3">Acceso sin limitaciones</h3>
                     <p>
                         LECTY sera un guia confiable en una ciudad desconocida,
                         permitiendo a los lectores guardar páginas enteras como puntos
@@ -86,9 +90,11 @@
             </div>
 
             <div class="card feature-card">
-                <i class="icono fa-solid fa-users"></i>
-                <div class="card-header">Diseño moderno y fácil de usar</div>
+                <div class="card-header d-flex flex-column">
+                    <i class="fa-solid fa-users my-3"></i>
+                </div>
                 <div class="card-body">
+                    <h3 class="roboto-medium mb-3">Diseño moderno y fácil de usar</h3>
                     <p>
                         en LECTY los usuarios pueden destacar libros mediante calificaciones
                         y comentarios, guiando a otros lectores hacia las gemas literarias
@@ -146,8 +152,56 @@
             </div>
         </section>
 
+        <div id="carrusel" class="carousel carousel-dark slide card container" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="7000">
+                    <img src="public/assets/images/fondos/recurso-carrusel-1024-1.png"
+                        class="d-block col-12 col-md-9 mx-auto" alt="...">
+                    <div class="carousel-caption p-1 p-sm-3 d-block">
+                        <h4 class="mb-4 roboto-medium text-decoration-underline">RESEÑAS</h4>
+                        <h5>@MaikolBustos</h5>
+                        <p>"Disfruto cada minuto en Lecty. Amplia variedad de libros y la navegación es fluida. ¡La
+                            mejor forma de leer digitalmente!"</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="public/assets/images/fondos/recurso-carrusel-1024-2.png"
+                        class="d-block col-12 col-md-9 mx-auto" alt="...">
+                    <div class="carousel-caption p-1 p-sm-3 d-block">
+                        <h4 class="mb-4 roboto-medium text-decoration-underline">RESEÑAS</h4>
+                        <h5>@MaryhugDuran</h5>
+                        <p>"Lecty ha transformado mi rutina de lectura. Gran selección de libros y una interfaz
+                            amigable. ¡Una experiencia muy satisfactoria!"</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <img src="public/assets/images/fondos/recurso-carrusel-1024-3.png"
+                        class="d-block col-12 col-md-9 mx-auto" alt="...">
+                    <div class="carousel-caption p-1 p-sm-3 d-block">
+                        <h4 class="mb-4 roboto-medium text-decoration-underline">RESEÑAS</h4>
+                        <h5 class="pos">@EmmanuelVidal</h5>
+                        <p>"Lecty me fascinó. Sentirse en una ciudad dedicada a la lectura es increíble. ¡Muy
+                            recomendable!"</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
 
-        <section class="container card carousel-container">
+        <!-- <section class="container card carousel-container">
             <span>Reseñas</span><br>
             <div id="carouselDark" class="carousel carousel-dark slide">
                 <div class="carousel-indicators">
@@ -198,7 +252,7 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </section>
+        </section> -->
 
         <!-- Formulario de contacto -->
         <section id="contacto" class="py-5 container card">
