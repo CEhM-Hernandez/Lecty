@@ -14,34 +14,6 @@ main section {
     padding: 50px 0;
 }
 
-/*----------------------banner-----------------------*/
-
-#banner {
-    border-radius: 5px;
-    display: flex;
-    background-image: url("../../public/assets/images/fondos/Banner.png");
-    text-align: end;
-    font-size: x-large;
-    color: #fff;
-}
-
-#titulo {
-    text-align: center;
-    margin-left: 750px;
-}
-
-#lema {
-    text-align: center;
-    margin-top: 80px;
-    margin-left: 550px;
-}
-
-#btn {
-    text-align: center;
-    margin-top: 50px;
-    margin-left: 450px;
-}
-
 /*---------------caracteristicas--------------------*/
 
 .feature-container {
