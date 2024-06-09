@@ -77,12 +77,12 @@ main section {
 
 .carousel-item img {
     height: auto;
-    filter: blur(3px);
+    filter: blur(8px);
 }
 
 .carousel-caption {
     bottom: 20%;
     color: #fff !important;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 5px;
 }
