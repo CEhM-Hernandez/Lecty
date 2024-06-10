@@ -20,8 +20,8 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/..//index.html#">
-                    <img src="/..//public/assets/images/logo/Logo(transparente).png" alt="Logo Lecty"
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../public/assets/images/logo/Logo(transparente).png" alt="Logo Lecty"
                         style="width: 200px;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -32,18 +32,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Inicio</a>
+                            <a class="nav-link" href="/src/Home/index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#descripcion">Descripción</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#caracteristicas">Características</a>
+                            <a class="nav-link"
+                                href="/src/pag_funcionalidad_mis_libros/pagfuncionalidad.html">Perfil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto">Contacto</a>
+                            <a class="nav-link" href="/src/formularioPago/index.html">Planes</a>
                         </li>
                         <li class="nav-item">
                     </ul>
@@ -89,13 +85,16 @@
                 <a class="nav-link" href="#" aria-current="page">Mis Libros</a>
                 <h3 class="line">|</h3>
                 <a class="nav-link" href="#">Biblioteca</a>
+                <h3 class="line">|</h3>
+                <a class="nav-link" href="/src/Configuracion/index.html">Configuracion Avanzada</a>
             </nav>
         </div>
         <br>
-        
+
         <div class="containerfun">
             <div class="card">
-                <img src="../../public/assets/images/libros/the_room.png" alt="The Room" class="book-cover">
+                <a href="../Funcionalidad/index.html"><img src="../../public/assets/images/libros/the_room.png"
+                        alt="The Room" class="book-cover"></a>
             </div>
             <div class="card empty">
                 <p>+</p>
@@ -106,7 +105,7 @@
         </div>
         <br>
 
-        
+
 
     </main>
 
@@ -145,10 +144,12 @@
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/7938d78b4b.js" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.7.1.js"
-		integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>	
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-	
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/src/auth/auth.js"></script>
+    <script src="/src/auth/session.js"></script>
+    <script src="verificacion.js"></script>
 
 </body>
 
