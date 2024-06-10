@@ -92,7 +92,9 @@ body {
 
 .image-container .texto-logo{
     width: 60%;
+    margin: auto;
 }
+
 
 h1 {
     display: flex;

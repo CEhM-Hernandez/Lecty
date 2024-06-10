@@ -6,8 +6,7 @@ $(document).ready(function() {
 
         const success = login(username, password, rememberMe);
         if (success) {
-            console.log("hola")
-            window.location.href = '/../src/formularioPago/index.html';
+            window.location.href = '/../src/Home/index.html';
         } else {
             alert('Nombre de usuario o contraseña incorrectos');
         }
@@ -25,6 +24,6 @@ $(document).ready(function() {
     });
 
     if (checkSession()) {
-        window.location.href = '/../src/formularioPago/index.html';
+        window.location.href = '/../src/Home/index.html';
     }
 });
