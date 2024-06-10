@@ -35,11 +35,6 @@
                             <a class="nav-link" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#descripcion">Descripción</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="#beneficios">Beneficios</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#caracteristicas">Características</a>
                         </li>
                         <li class="nav-item">
@@ -47,19 +42,27 @@
                         </li>
                         <li class="nav-item">
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                        <button class="btn btn-outline-warning" type="submit">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </form>
+                    <div class="d-flex gap-3">
+                        <div class="card-body">
+                            <a href="/src/signin/index.html" class="btn btn-principal">Sign in</a>
+                        </div>
+                        <div class="card-body">
+                            <a href="/src/signup/index.html" class="btn btn-principal">Sign up</a>
+                        </div>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                            <button class="btn btn-outline-warning" type="submit">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
         <!-- caracteristicas -->
-        <section class="container card feature-container">
+        <section class="container card feature-container" id="caracteristicas">
 
             <div class="card feature-card">
                 <div class="card-header d-flex flex-column">
