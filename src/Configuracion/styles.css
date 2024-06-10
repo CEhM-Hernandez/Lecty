@@ -1,0 +1,30 @@
+.encabezado{
+
+    background-color: #DAA9C8;
+
+
+}
+.imagen{
+    height: 150px;
+    border-radius: 50%;
+}
+
+.aside{
+    background-color: #320D47;
+}
+
+.aside button{
+    color: #fff;;
+}
+
+.aside button:hover{
+    color: #F2B705;
+}
+.div-grandote{
+    background-color: #D9D9D9;
+    
+}
+.div-grandote{
+    background-color:  #DAA9C8;
+}
+
