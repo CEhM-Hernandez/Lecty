@@ -111,3 +111,10 @@ body .mislibros {
     font-size: 48px;
     color: #ccc;
 }
+.imagen{
+    height: 150px;
+    border-radius: 50%;
+}
+.encabezado{
+    background-color: #DAA9C8;
+}

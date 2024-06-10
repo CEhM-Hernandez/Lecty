@@ -1,9 +1,7 @@
 .encabezado{
-
     background-color: #DAA9C8;
-
-
 }
+
 .imagen{
     height: 150px;
     border-radius: 50%;
@@ -20,10 +18,7 @@
 .aside button:hover{
     color: #F2B705;
 }
-.div-grandote{
-    background-color: #D9D9D9;
-    
-}
+
 .div-grandote{
     background-color:  #DAA9C8;
 }
