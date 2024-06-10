@@ -1,0 +1,43 @@
+.principal-container {
+    margin: 5rem auto;
+}
+
+.card-header .nav {
+    padding: 2rem;
+}
+
+.nav-pills {
+    font-size: 40px;
+}
+
+.nav-link i {
+    transition: 150ms all ease-in-out;
+}
+
+.fa-bookmark {
+    color: #ffc107;
+}
+
+.fa-heart {
+    color: rgb(238, 20, 20);
+}
+
+.fa-comment {
+    color: #320D47;
+}
+
+.fa-gear {
+    color: grey;
+}
+
+.fa-gears {
+    color: grey;
+}
+
+.dropdown-menu {
+    z-index: 1;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
