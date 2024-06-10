@@ -1,5 +1,7 @@
-.principal-container {
-    margin: 5rem auto;
+.comic-neue-regular {
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .card-header .nav {
@@ -36,8 +38,23 @@
 
 .dropdown-menu {
     z-index: 1;
+    padding-bottom: 0;
 }
 
-.dropdown-menu li {
+.dropdown-menu ul {
     list-style: none;
+}
+
+.tab-pane {
+    height: fit-content;
+}
+
+.cuerpo-pagina {
+    margin: 5rem 0 4rem 0;
+}
+
+.nav-link:active,
+.nav-link.active {
+    background-color: #e6e6e6 !important;
+    border-color: #e6e6e6 !important;
 }
