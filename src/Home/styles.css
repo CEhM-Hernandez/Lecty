@@ -1,0 +1,154 @@
+/*
+Morado Oscuro 320D47
+Morado Claro 452759
+Amarillo f2b705
+Marron Claro bf861b
+Marron Oscuro 8c5a2e
+Rosado daa9c8
+*/
+
+
+.TwiceNav-bar .nav-link {
+    color: #ffff;
+    transition: color 0.2s ease-in-out;
+    text-decoration: line;
+    padding-bottom: 5px;
+}
+
+.TwiceNav-bar .nav-link:hover {
+    color: #f2b705;
+    border-bottom-color: #f2b705;
+}
+
+.TwiceNav-bar .nav.justify-content-rigth {
+    background-color: #452759;
+}
+
+.funprofile {
+    text-align: center;
+    background-color: #daa9c8;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.libros {
+    text-align: center;
+}
+
+h2.mislibros{
+    color: #333;
+    margin: 0;
+    font-size: 24px;
+}
+
+h3.mislibros{
+    color: #333;
+    margin: 0;
+    font-size: 24px;
+}
+
+p.mislibros {
+    color: #333;
+    margin: 0;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(197, 197, 197, 0.5);
+    border-radius: 10px;
+    width: 50%;
+    max-width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+body .mislibros {
+
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.containerfun {
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 150px;
+    height: fit-conten;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.book-cover {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: auto;
+}
+
+.card.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: #ccc;
+}
+.imagen{
+    height: 150px;
+    border-radius: 50%;
+}
+.encabezado{
+    background-color: #DAA9C8;
+}
+h4.line{
+    color: #f2b705;
+    margin: 0;
+    font-size: 20px;
+    text-align:center;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor_opaco{
+    background-color: #ffffffaa;
+    width: fit-content;
+    border-radius: 20px;
+
+}
+
+.libros{
+    margin: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
