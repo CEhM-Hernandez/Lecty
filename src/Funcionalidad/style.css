@@ -1,5 +1,12 @@
 .comic-neue-regular {
-    font-family: "Comic Neue", cursive;
+    font-family: "Comic Neue", cursive !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.oswald-regular {
+    font-family: "Oswald", sans-serif !important;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
@@ -41,8 +48,13 @@
     padding-bottom: 0;
 }
 
-.dropdown-menu ul {
+ul {
     list-style: none;
+}
+
+.collapse .card,
+.collapsing {
+    font-size: 1rem;
 }
 
 .tab-pane {
@@ -57,4 +69,10 @@
 .nav-link.active {
     background-color: #e6e6e6 !important;
     border-color: #e6e6e6 !important;
+}
+
+.collapse .card .btn-outline-warning {
+    height: 40px;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
 }
